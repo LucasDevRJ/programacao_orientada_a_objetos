@@ -7,8 +7,7 @@ public class Principal {
 		//static = função global no código
 		//void = o que a função retorna
 		//esta é a função principal que começará a execução do código
-		System.out.println("Alô Mamãe!");
-		System.out.println("Alô Papai!");
+		System.out.println("Alô Mamãe");
 	}
 
 }
