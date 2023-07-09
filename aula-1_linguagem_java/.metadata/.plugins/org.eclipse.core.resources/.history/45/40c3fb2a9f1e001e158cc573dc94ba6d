@@ -1,0 +1,23 @@
+package exercicios;
+
+import java.util.Scanner;
+
+public class IMC {
+	double peso;
+	double altura;
+	double imc;
+	public static void main(String[] args) {
+		
+		
+		Scanner entrada = new Scanner(System.in);
+		
+		System.out.print("Digite o seu peso: ");
+		peso = entrada.nextDouble();
+		
+		System.out.print("Digite a sua altura: ");
+		altura = entrada.nextDouble();
+		
+		imc = peso / altura;
+	}
+	
+}
