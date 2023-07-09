@@ -51,14 +51,7 @@ public class Principal {
 			System.out.println("Valor: " + i);
 		}
 		
-		//vetor
 		int megaSena[] = {11, 14, 21, 30, 37, 56};
-		
-		//Array de 200 números
-		int numeros[] = new int[200];
-		
-		numeros[60] = 50;
-		megaSena[0] = 10;
 	}
 
 }
