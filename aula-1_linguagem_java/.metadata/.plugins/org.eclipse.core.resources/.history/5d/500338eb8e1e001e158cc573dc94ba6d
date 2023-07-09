@@ -38,20 +38,6 @@ public class Principal {
 		System.out.printf("Nome = %s\n", nome);
 		System.out.printf("Idade = %d\n", idade); //exibe mensagem com formatação
 		System.out.printf("Peso = %.2f", peso);
-		System.out.println();
-		if (idade < 18) {
-			System.out.println("Acesso bloqueado");
-		} else if (idade < 65) {
-			System.out.println("Adulto");
-		} else {
-			System.out.println("Adulto idoso");
-		}
-		
-		for (int i = 0; i < 10; i++) {
-			System.out.println("Valor: " + i);
-		}
-		
-		int megaSena[] = {11, 14, 21, 30, 37, 56};
 	}
 
 }

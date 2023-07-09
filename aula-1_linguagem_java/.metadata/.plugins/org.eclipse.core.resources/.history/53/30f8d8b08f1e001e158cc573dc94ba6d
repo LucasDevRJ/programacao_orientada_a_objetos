@@ -42,7 +42,7 @@ public class Principal {
 		if (idade < 18) {
 			System.out.println("Acesso bloqueado");
 		} else if (idade < 65) {
-			System.out.println("Adulto");
+			System.out.println("Adulto idoso");
 		} else {
 			System.out.println("Adulto idoso");
 		}
