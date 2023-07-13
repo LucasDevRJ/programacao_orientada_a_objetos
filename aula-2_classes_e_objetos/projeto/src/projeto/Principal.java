@@ -7,8 +7,9 @@ public class Principal {
 		aluno.nome = "Super Mario";
 		aluno.cpf = "111222333";
 		
-		System.out.println("Matrícula: " + aluno.matricula);
-		System.out.println("Nome: " + aluno.nome);
-		System.out.println("CPF: " + aluno.cpf);
+		aluno.info();
+		
+		aluno.nome = "Luigi";
+		aluno.info();
 	}
 }
