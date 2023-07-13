@@ -19,6 +19,7 @@ public class Principal {
 		aluno.info();
 		
 		Carro carro = new Carro();
+		//Carro.nome = "Citroen"; não é permitido a alteração
 		Carro.modelo = "Ford K";
 		System.out.println(Carro.modelo);
 		//carro.milhasParaMetros(10); como é static não é preciso instanciar

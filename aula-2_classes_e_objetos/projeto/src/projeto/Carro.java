@@ -2,7 +2,9 @@ package projeto;
 
 public class Carro {
 	//atributo static permite o acesso sem instancias
-	String nome;
+	
+	//final não permite alteração
+	static final String nome = "Ford";
 	static String modelo;
 	float velocidade;
 	
