@@ -17,5 +17,11 @@ public class Principal {
 		
 		aluno.nome = "Luigi";
 		aluno.info();
+		
+		Carro carro = new Carro();
+		Carro.modelo = "Ford K";
+		System.out.println(Carro.modelo);
+		//carro.milhasParaMetros(10); como é static não é preciso instanciar
+		System.out.println(Carro.milhasParaMetros(10));
 	}
 }
