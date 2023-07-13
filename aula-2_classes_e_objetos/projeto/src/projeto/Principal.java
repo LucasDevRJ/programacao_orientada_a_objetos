@@ -1,5 +1,7 @@
 package projeto;
 
+import java.util.ArrayList;
+
 public class Principal {
 	public static void main(String[] args) {
 		Aluno aluno = new Aluno();
@@ -24,5 +26,29 @@ public class Principal {
 		System.out.println(Carro.modelo);
 		//carro.milhasParaMetros(10); como é static não é preciso instanciar
 		System.out.println(Carro.milhasParaMetros(10));
+		
+		Professor professor = new Professor();
+		professor.nome = "Leonardo";
+		professor.formacao = "Ciência da Computação";
+		professor.cadastro = 1;
+		
+		professor.info();
+		
+		Turma turma = new Turma();
+		turma.nome = "101";
+		turma.professor = professor;
+		turma.adicionarAluno(aluno);
+		turma.adicionarAluno(aluno2);
+		
+		//outra forma de se fazer
+		Turma turma2 = new Turma();
+		turma2.professor = new Professor();
+		turma2.professor.nome = "Gustavo";
+		turma2.professor.formacao = "TUDO";
+		turma2.alunos = new ArrayList();
+		turma2.alunos.add(new Aluno());
+		turma2.alunos.get(0).nome = "Lucas Pereira";
+		System.out.println(turma2.professor.nome);
+		System.out.println(turma2.alunos.get(0).nome);
 	}
 }
