@@ -50,5 +50,12 @@ public class Principal {
 		turma2.alunos.get(0).nome = "Lucas Pereira";
 		System.out.println(turma2.professor.nome);
 		System.out.println(turma2.alunos.get(0).nome);
+		
+		Aluno aluno3 = new Aluno(1003, "Lion", "444333");
+		System.out.println(aluno3.nome);
+		
+		turma.adicionarAluno(aluno3);
+		
+		System.out.println(turma.alunos.get(2).nome);
 	}
 }
