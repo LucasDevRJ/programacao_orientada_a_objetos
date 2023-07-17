@@ -1,7 +1,7 @@
 package empresa;
 
 public class Horario {
-	int hora;
-	int minuto;
-	int segundo;
+	private int hora;
+	private int minuto;
+	private int segundo;
 }
