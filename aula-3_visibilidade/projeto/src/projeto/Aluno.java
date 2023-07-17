@@ -1,9 +1,10 @@
 package projeto;
 
 public class Aluno {
-	int matricula;
-	String nome;
-	String cpf;
+	private int matricula;
+	public String nome;
+	public String cpf;
+	protected int notas[];
 	
 	//construtor para adicionar valores ao criar o objeto
 //	 Aluno(int pMatricula, String pNome, String pCpf) {
@@ -13,18 +14,18 @@ public class Aluno {
 //	}
 	
 	//forma mais usual
-	Aluno(int matricula, String nome, String cpf) {
+	public Aluno(int matricula, String nome, String cpf) {
 		this.matricula = matricula;
 		this.nome = nome;
 		this.cpf = cpf;
 	}
 	
 	//construtor padrão sem nada
-	 Aluno() {
+	public Aluno() {
 		
 	}
 
-	void info() {
+	public void info() {
 		System.out.println("Matrícula: " + matricula);
 		System.out.println("Nome: " + nome);
 		System.out.println("CPF: " + cpf);
