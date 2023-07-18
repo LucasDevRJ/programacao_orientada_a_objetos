@@ -1,6 +1,7 @@
 package colecoes;
 
 import java.util.ArrayList;
+import java.util.Collections;
 import java.util.HashMap;
 import java.util.LinkedList;
 
@@ -22,6 +23,18 @@ public class Principal {
 		System.out.println(pessoas.get(0));
 		
 		pessoas.remove(2);
+		
+		System.out.println(pessoas);
+		
+		pessoas.add("Wario");
+
+		//ordem alfabetica
+		Collections.sort(pessoas);
+		
+		System.out.println(pessoas);
+		
+		//mistura elementos
+		Collections.shuffle(pessoas);
 		
 		System.out.println(pessoas);
 		
