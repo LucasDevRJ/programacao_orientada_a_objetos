@@ -34,7 +34,11 @@ public class Nota {
 	}
 	
 	public void setFaltas(int faltas) {
-		this.faltas = faltas;
+		if (faltas > 0 && faltas <= 35) {
+			this.faltas = faltas;
+		} else {
+			System.out.println("Número de faltas inválido!");
+		}
 	}
 	
 	public void exibeResultadoMedia() {
