@@ -32,4 +32,9 @@ public class Curso {
 			System.out.println("Digite o valor da mensalidade!");
 		}
 	}
+	
+	public void descrever() {
+		System.out.println("Curso: " + this.nome);
+		System.out.println("Mensalidade: R$ " + this.mensalidade);
+	}
 }

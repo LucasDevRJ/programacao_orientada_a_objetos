@@ -22,6 +22,8 @@ public class Principal {
 		System.out.println();
 		aluno.exibePagamento();
 		System.out.println();
+		curso.descrever();
+		
 		
 		Curso curso2 = new Curso("Sistemas de Informação", 800.0);
 		
@@ -30,5 +32,7 @@ public class Principal {
 		aluno2.descrever();
 		System.out.println();
 		aluno2.exibePagamento();
+		System.out.println();
+		curso2.descrever();
 	}
 }
