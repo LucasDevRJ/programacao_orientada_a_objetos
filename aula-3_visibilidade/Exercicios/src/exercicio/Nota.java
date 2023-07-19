@@ -5,6 +5,12 @@ public class Nota {
 	private double nota2;
 	private int faltas;
 	
+	public Nota(double nota1, double nota2, int faltas) {
+		setNota1(nota1);
+		setNota2(nota2);
+		setFaltas(faltas);
+	}
+	
 	public double getNota1() {
 		return nota1;
 	}

@@ -7,11 +7,10 @@ public class Aluno {
 	private Curso curso;
 	
 	public Aluno(String nome, int matricula, double desconto, Curso curso) {
-		super();
-		this.nome = nome;
-		this.matricula = matricula;
-		this.desconto = desconto;
-		this.curso = curso;
+		setNome(nome);
+		setMatricula(matricula);
+		setDesconto(desconto);
+		setCurso(curso);
 	}
 	
 	public String getNome() {
