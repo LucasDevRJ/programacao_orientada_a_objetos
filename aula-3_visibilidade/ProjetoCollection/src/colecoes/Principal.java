@@ -1,5 +1,7 @@
 package colecoes;
 
+import java.time.LocalDate;
+import java.time.format.DateTimeFormatter;
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.HashMap;
@@ -80,5 +82,10 @@ public class Principal {
 			soma += (int) it.next();
 		}
 		
+		LocalDate dataHoje = LocalDate.now();
+		System.out.println(dataHoje);
+		
+		DateTimeFormatter formatador = DateTimeFormatter.ofPattern("dd/MM/yyyy - EEEE");
+		System.out.println(dataHoje.format(formatador));
 	}
 }
