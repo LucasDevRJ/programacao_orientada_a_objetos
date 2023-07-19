@@ -18,7 +18,11 @@ public class Aluno {
 	}
 	
 	public void setNome(String nome) {
-		this.nome = nome;
+		if (nome.length() > 0) {
+			this.nome = nome;
+		} else {
+			System.out.println("Digite o nome do aluno!");
+		}
 	}
 	
 	public int getMatricula() {
@@ -26,7 +30,9 @@ public class Aluno {
 	}
 	
 	public void setMatricula(int matricula) {
-		this.matricula = matricula;
+		if (matricula > 0) {
+			this.matricula = matricula;
+		}
 	}
 	
 	public double getDesconto() {
@@ -34,7 +40,12 @@ public class Aluno {
 	}
 	
 	public void setDesconto(double desconto) {
-		this.desconto = desconto;
+		if (desconto > 0.0 && desconto <= 100.0) {
+			this.desconto = desconto;
+		} else {
+			System.out.println("Desconto inválido");
+		}
+		
 	}
 	
 	public Curso getCurso() {
