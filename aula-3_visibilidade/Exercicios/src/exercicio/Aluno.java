@@ -41,7 +41,7 @@ public class Aluno {
 	
 	public void setDesconto(double desconto) {
 		if (desconto > 0.0 && desconto <= 100.0) {
-			this.desconto = desconto;
+			this.desconto = desconto / 100.0;
 		} else {
 			System.out.println("Desconto inválido");
 		}
@@ -54,5 +54,17 @@ public class Aluno {
 	
 	public void setCurso(Curso curso) {
 		this.curso = curso;
+	}
+	
+	public void exibePagamento() {
+		double mensalidadeComDesconto = this.curso.getMensalidade() - (this.curso.getMensalidade() * this.desconto);
+		System.out.printf("O aluno %s paga de mensalidade o valor de R$ %.2f no curso de %s", this.nome, mensalidadeComDesconto, this.curso.getNome());
+	}
+	
+	public void descrever() {
+		System.out.println("Aluno: " + this.nome);
+		System.out.println("Matrícula: " + this.matricula);
+		System.out.println("Desconto: " + this.desconto * 100 + "%");
+		System.out.println("Curso: " + this.curso.getNome());
 	}
 }

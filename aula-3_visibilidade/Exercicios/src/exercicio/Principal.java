@@ -17,5 +17,18 @@ public class Principal {
 		Curso curso = new Curso("Engenharia de Software", 600.0);
 		
 		Aluno aluno = new Aluno("Gustavo Vieira", 564563, 30.0, curso);
+		
+		aluno.descrever();
+		System.out.println();
+		aluno.exibePagamento();
+		System.out.println();
+		
+		Curso curso2 = new Curso("Sistemas de Informação", 800.0);
+		
+		Aluno aluno2 = new Aluno("Nicholas Ricardo", 743564, 50.0, curso2);
+		
+		aluno2.descrever();
+		System.out.println();
+		aluno2.exibePagamento();
 	}
 }
