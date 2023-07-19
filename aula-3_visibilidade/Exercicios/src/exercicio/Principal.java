@@ -13,5 +13,9 @@ public class Principal {
 		
 		Nota nota4 = new Nota(8.0, 7.0, 9);
 		nota4.exibeResultadoMedia();
+		
+		Curso curso = new Curso("Engenharia de Software", 600.0);
+		
+		Aluno aluno = new Aluno("Gustavo Vieira", 564563, 30.0, curso);
 	}
 }
