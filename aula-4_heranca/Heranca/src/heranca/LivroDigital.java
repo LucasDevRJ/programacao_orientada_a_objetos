@@ -16,4 +16,9 @@ public class LivroDigital extends Livro {
 	public float tamanhoPorPagina() {
 		return tamanhoMB / (float) paginas;
 	}
+	
+	public void imprimirImposto() {
+		System.out.println("Imposto livro físico: " + super.imposto());
+		System.out.println("Imposto livro digital: " + this.imposto());
+	}
 }
