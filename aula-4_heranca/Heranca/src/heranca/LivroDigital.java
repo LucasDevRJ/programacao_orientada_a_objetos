@@ -10,7 +10,7 @@ public class LivroDigital extends Livro {
 	}
 	
 	public float imposto() {
-		return 0.2f * lucro() + 2;
+		return super.imposto() + 2;
 	}
 	
 	public float tamanhoPorPagina() {
