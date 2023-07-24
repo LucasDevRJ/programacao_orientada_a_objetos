@@ -7,6 +7,10 @@ public class Livro {
 	public String titulo;
 	public int paginas;
 	
+	public Livro(String titulo, String autor) {
+		
+	}
+	
 	public float lucro() {
 		return precoVenda - custoProducao;
 	}
