@@ -1,7 +1,7 @@
 package heranca;
 
 public class Livro {
-	public String autor;
+	public String autores;
 	public float custoProducao;
 	public float precoVenda;
 	public String titulo;
