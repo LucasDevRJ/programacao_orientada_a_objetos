@@ -1,6 +1,6 @@
 package heranca;
 
-public class LivroDigitalEx {
+public class Livro {
 	public String autor;
 	public float custoProducao;
 	public float precoVenda;
