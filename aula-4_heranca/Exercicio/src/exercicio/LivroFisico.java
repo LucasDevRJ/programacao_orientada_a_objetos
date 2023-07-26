@@ -4,7 +4,7 @@ public class LivroFisico extends Livro {
 	private int tiragem;
 	private int peso;
 	
-	public LivroFisico(String titulo, Autor autor, String genero, String edicao, int tiragem, int peso) {
+	public LivroFisico(String titulo, Autor autor, String genero, int edicao, int tiragem, int peso) {
 		super(titulo, autor, genero, edicao);
 		this.setTiragem(tiragem);
 		this.setPeso(peso);

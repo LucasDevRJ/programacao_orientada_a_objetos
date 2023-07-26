@@ -4,9 +4,9 @@ public class Livro {
 	private String titulo;
 	private Autor autor;
 	private String genero;
-	private String edicao;
+	private int edicao;
 	
-	public Livro(String titulo, Autor autor, String genero, String edicao) {
+	public Livro(String titulo, Autor autor, String genero, int edicao) {
 		this.setTitulo(titulo);
 		this.setAutor(autor);
 		this.setGenero(genero);
@@ -37,11 +37,11 @@ public class Livro {
 		this.genero = genero;
 	}
 	
-	public String getEdicao() {
+	public int getEdicao() {
 		return edicao;
 	}
 	
-	public void setEdicao(String edicao) {
+	public void setEdicao(int edicao) {
 		this.edicao = edicao;
 	}
 	
