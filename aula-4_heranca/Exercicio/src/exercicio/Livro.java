@@ -44,4 +44,11 @@ public class Livro {
 	public void setEdicao(String edicao) {
 		this.edicao = edicao;
 	}
+	
+	@Override
+	public String toString() {
+		return "Informações do Livro\nNome: " + this.titulo +
+				"\nAutor: " + this.autor.getNome() + "\nGenero: " + this.genero +
+				"\nEdição: " + this.edicao;
+	}
 }
