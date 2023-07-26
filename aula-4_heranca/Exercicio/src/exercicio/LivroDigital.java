@@ -1,8 +1,13 @@
 package exercicio;
 
-public class LivroDigital {
+public class LivroDigital extends Livro {
 	private int download;
 	private int tamanho;
+	
+	public LivroDigital(String titulo, Autor autor, String genero, String edicao) {
+		super(titulo, autor, genero, edicao);
+		// TODO Auto-generated constructor stub
+	}
 	
 	public int getDownload() {
 		return download;

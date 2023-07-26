@@ -6,6 +6,13 @@ public class Livro {
 	private String genero;
 	private String edicao;
 	
+	public Livro(String titulo, Autor autor, String genero, String edicao) {
+		this.setTitulo(titulo);
+		this.setAutor(autor);
+		this.setGenero(genero);
+		this.setEdicao(edicao);
+	}
+	
 	public String getTitulo() {
 		return titulo;
 	}

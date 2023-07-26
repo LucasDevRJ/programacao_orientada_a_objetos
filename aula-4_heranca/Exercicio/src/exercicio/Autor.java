@@ -5,6 +5,12 @@ public class Autor {
 	private String email;
 	private String nacionalidade;
 	
+	public Autor(String nome, String email, String nacionalidade) {
+		this.setNome(nome);
+		this.setEmail(email);
+		this.setNacionalidade(nacionalidade);
+	}
+	
 	public String getNome() {
 		return nome;
 	}

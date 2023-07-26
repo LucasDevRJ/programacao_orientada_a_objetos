@@ -1,8 +1,13 @@
 package exercicio;
 
-public class LivroFisico {
+public class LivroFisico extends Livro {
 	private int tiragem;
 	private int peso;
+	
+	public LivroFisico(String titulo, Autor autor, String genero, String edicao) {
+		super(titulo, autor, genero, edicao);
+		// TODO Auto-generated constructor stub
+	}
 	
 	public int getTiragem() {
 		return tiragem;
