@@ -25,5 +25,7 @@ public class Principal {
 		Gato gato = new Gato();
 		gato.emitirSom();
 		gato.dormir();
+		
+		Roupa roupa = new Roupa("Camisa", Tamanho.M, Estacao.OUTONO);
 	}
 }

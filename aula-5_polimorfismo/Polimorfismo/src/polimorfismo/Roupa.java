@@ -1,5 +1,13 @@
 package polimorfismo;
 
+enum Tamanho {
+	PP,
+	P,
+	M,
+	G,
+	GG
+}
+
 enum Estacao {
 	VERAO,
 	OUTONO,
@@ -10,10 +18,10 @@ enum Estacao {
 public class Roupa {
 
 	String modelo;
-	int tamanho;
+	Tamanho tamanho;
 	Estacao colecao; //1 - Verão, 2 - Outono, 3 - Inverno, 4 - Primavera
 	
-	public Roupa(String modelo, int tamanho, Estacao colecao) {
+	public Roupa(String modelo, Tamanho tamanho, Estacao colecao) {
 		this.modelo = modelo;
 		this.tamanho = tamanho;
 		this.colecao = colecao;
