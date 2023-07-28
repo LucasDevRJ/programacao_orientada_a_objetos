@@ -1,6 +1,6 @@
 package exercicios;
 
-public abstract class Computador {
+public abstract class Computador implements Imprimivel {
 	
 	private int gigabytes;
 	private int quantidadeProcessadores;
