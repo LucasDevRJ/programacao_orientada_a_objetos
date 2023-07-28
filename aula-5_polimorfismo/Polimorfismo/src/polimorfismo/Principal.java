@@ -21,5 +21,9 @@ public class Principal {
 			System.out.println("Salário: " + funcionarios[i].pagamento());
 			System.out.println();
 		}
+		
+		Gato gato = new Gato();
+		gato.emitirSom();
+		gato.dormir();
 	}
 }
