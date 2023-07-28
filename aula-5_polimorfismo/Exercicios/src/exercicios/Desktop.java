@@ -16,7 +16,8 @@ public class Desktop extends Computador {
 	@Override
 	public double calculaValor() {
 		// TODO Auto-generated method stub
-		return 0;
+		return super.getGigabytes() * 200 + 
+				super.getQuantidadeProcessadores() * 400 + 
+				this.acessorios;
 	}
-
 }
