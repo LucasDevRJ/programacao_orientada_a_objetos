@@ -17,8 +17,17 @@ public class PropriaExcecao {
 //		}
 		
 		//Exceção não tratada
-		if (valor > 10 || valor < 0) {
-			throw new RuntimeException("Valor inválido!");
+//		if (valor > 10 || valor < 0) {
+//			throw new RuntimeException("Valor inválido!");
+//		}
+		
+		//Nossa própria Exceção checada
+		try {
+			if (valor > 10 || valor < 0) {
+				throw new ValorInvalidoException("Valor inválido!");
+			}
+		} catch (ValorInvalidoException e) {
+			System.out.println(e.getMessage());
 		}
 	}
 }
