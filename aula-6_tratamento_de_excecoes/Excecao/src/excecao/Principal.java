@@ -43,5 +43,14 @@ public class Principal {
 		Usuario usuario4 = new Usuario(3, "Vinicius", "333.333.333-33");
 		
 		System.out.println(usuario4);
+		
+		Singleton s1 = Singleton.getInstance();
+		Singleton s2 = Singleton.getInstance();
+		
+		s1.numero += 10;
+		System.out.println(s1.numero);
+		
+		s2.numero += 20;
+		System.out.println(s2.numero);
 	}
 }
