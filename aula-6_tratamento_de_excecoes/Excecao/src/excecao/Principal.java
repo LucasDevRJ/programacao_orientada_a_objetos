@@ -39,5 +39,9 @@ public class Principal {
 		
 		//irá dar verdadeiro pq o conteúdo é o mesmo
 		System.out.println(usuario1.equals(usuario3));
+		
+		Usuario usuario4 = new Usuario(3, "Vinicius", "333.333.333-33");
+		
+		System.out.println(usuario4);
 	}
 }

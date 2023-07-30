@@ -29,4 +29,9 @@ public class Usuario {
 		Usuario other = (Usuario) obj;
 		return Objects.equals(cpf, other.cpf) && id == other.id && Objects.equals(nome, other.nome);
 	}
+
+	@Override
+	public String toString() {
+		return "Usuario [id=" + id + ", nome=" + nome + ", cpf=" + cpf + "]";
+	}
 }
